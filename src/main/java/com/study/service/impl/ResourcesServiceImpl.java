@@ -1,20 +1,19 @@
 package com.study.service.impl;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import com.github.pagehelper.util.StringUtil;
-import com.study.mapper.ResourcesMapper;
-import com.study.model.Resources;
-import com.study.model.User;
-import com.study.service.ResourcesService;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.stereotype.Service;
-import tk.mybatis.mapper.entity.Example;
-
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.study.mapper.ResourcesMapper;
+import com.study.model.Resources;
+import com.study.service.ResourcesService;
+
+import tk.mybatis.mapper.entity.Example;
 
 /**
  * Created by yangqj on 2017/4/25.

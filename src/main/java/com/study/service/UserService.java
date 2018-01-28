@@ -2,7 +2,6 @@ package com.study.service;
 
 import com.github.pagehelper.PageInfo;
 import com.study.model.User;
-import com.study.model.UserRole;
 
 /**
  * Created by yangqj on 2017/4/21.

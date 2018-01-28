@@ -1,9 +1,9 @@
 package com.study.service;
 
+import java.util.List;
+
 import com.github.pagehelper.PageInfo;
 import com.study.model.Role;
-
-import java.util.List;
 
 public interface RoleService extends IService<Role> {
 

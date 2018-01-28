@@ -1,10 +1,9 @@
 package com.study.config;
 
-import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
-import com.github.pagehelper.util.StringUtil;
-import com.study.model.Resources;
-import com.study.service.ResourcesService;
-import com.study.shiro.MyShiroRealm;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
@@ -20,9 +19,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import com.github.pagehelper.util.StringUtil;
+import com.study.model.Resources;
+import com.study.service.ResourcesService;
+import com.study.shiro.MyShiroRealm;
+
+import at.pollux.thymeleaf.shiro.dialect.ShiroDialect;
 
 /**
  * Created by yangqj on 2017/4/23.

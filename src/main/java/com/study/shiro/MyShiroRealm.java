@@ -1,11 +1,20 @@
 package com.study.shiro;
 
-import com.study.model.Resources;
-import com.study.model.User;
-import com.study.service.ResourcesService;
-import com.study.service.UserService;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.annotation.Resource;
+
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.*;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.AuthenticationInfo;
+import org.apache.shiro.authc.AuthenticationToken;
+import org.apache.shiro.authc.LockedAccountException;
+import org.apache.shiro.authc.SimpleAuthenticationInfo;
+import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.mgt.RealmSecurityManager;
@@ -18,8 +27,10 @@ import org.apache.shiro.util.ByteSource;
 import org.crazycake.shiro.RedisSessionDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.annotation.Resource;
-import java.util.*;
+import com.study.model.Resources;
+import com.study.model.User;
+import com.study.service.ResourcesService;
+import com.study.service.UserService;
 
 /**
  * Created by yangqj on 2017/4/21.

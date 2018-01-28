@@ -1,20 +1,20 @@
 package com.study.controller;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.annotation.Resource;
+
+import org.apache.shiro.SecurityUtils;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.github.pagehelper.PageInfo;
 import com.study.model.Resources;
 import com.study.service.ResourcesService;
 import com.study.shiro.ShiroService;
-import org.apache.shiro.SecurityUtils;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-import tk.mybatis.mapper.entity.Example;
-
-import javax.annotation.Resource;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Created by yangqj on 2017/4/25.

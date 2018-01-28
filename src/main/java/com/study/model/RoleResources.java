@@ -1,7 +1,10 @@
 package com.study.model;
 
-import javax.persistence.*;
 import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Table(name = "role_resources")
 public class RoleResources implements Serializable{

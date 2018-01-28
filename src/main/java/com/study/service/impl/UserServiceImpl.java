@@ -1,20 +1,22 @@
 package com.study.service.impl;
 
+import java.util.List;
+
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.study.mapper.ResourcesMapper;
 import com.study.mapper.UserRoleMapper;
 import com.study.model.User;
 import com.study.model.UserRole;
 import com.study.service.UserService;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
-import org.springframework.transaction.annotation.Transactional;
+
 import tk.mybatis.mapper.entity.Example;
 import tk.mybatis.mapper.util.StringUtil;
-
-import javax.annotation.Resource;
-import java.util.List;
 
 /**
  * Created by yangqj on 2017/4/21.

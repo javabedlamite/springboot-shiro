@@ -1,11 +1,11 @@
 package com.study;
 
 
-import com.study.model.User;
-import org.crazycake.shiro.RedisCacheManager;
 import org.crazycake.shiro.RedisManager;
 import org.crazycake.shiro.SerializeUtils;
 import org.junit.Test;
+
+import com.study.model.User;
 
 /**
  * Created by yangqj on 2018/1/13.

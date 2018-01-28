@@ -1,20 +1,21 @@
 package com.study.service.impl;
 
-import com.study.mapper.UserRoleMapper;
-import com.study.model.RoleResources;
-import com.study.service.RoleResourcesService;
-import com.study.shiro.MyShiroRealm;
-import com.study.shiro.ShiroService;
+import java.util.List;
+
+import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
-import tk.mybatis.mapper.entity.Example;
 
-import javax.annotation.Resource;
-import java.util.List;
+import com.study.mapper.UserRoleMapper;
+import com.study.model.RoleResources;
+import com.study.service.RoleResourcesService;
+import com.study.shiro.MyShiroRealm;
+
+import tk.mybatis.mapper.entity.Example;
 
 /**
  * Created by yangqj on 2017/4/26.

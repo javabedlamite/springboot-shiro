@@ -1,7 +1,9 @@
 package com.study.model;
 
-import javax.persistence.*;
 import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Table;
 
 @Table(name = "user_role")
 public class UserRole implements Serializable{

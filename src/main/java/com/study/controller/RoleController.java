@@ -1,21 +1,21 @@
 package com.study.controller;
 
-import com.github.pagehelper.PageInfo;
-import com.study.model.Role;
-import com.study.model.RoleResources;
-import com.study.model.User;
-import com.study.service.RoleResourcesService;
-import com.study.service.RoleService;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.annotation.Resource;
+
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import com.github.pagehelper.PageInfo;
+import com.study.model.Role;
+import com.study.model.RoleResources;
+import com.study.service.RoleResourcesService;
+import com.study.service.RoleService;
 
 /**
  * Created by yangqj on 2017/4/26.
