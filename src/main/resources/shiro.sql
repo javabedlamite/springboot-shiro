@@ -1,13 +1,13 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : jj
-Source Server Version : 50022
+Source Server         : 
+Source Server Version : 
 Source Host           : localhost:3306
-Source Database       : shiro
+Source Database       : 
 
 Target Server Type    : MYSQL
-Target Server Version : 50022
+Target Server Version : 
 File Encoding         : 65001
 
 Date: 2017-05-07 21:00:04
